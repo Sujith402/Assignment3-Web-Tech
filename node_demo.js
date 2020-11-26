@@ -1,3 +1,4 @@
-const os = require('os')
+const {MongoClient} = require('mongodb');
 
-console.log(os.platform());
+
+
