@@ -1,11 +1,12 @@
 import { Component } from 'react';
 import './App.css';
+import './Styles/demo_style.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        { this.props.count > 0 && <h1>Messages: {this.props.count}</h1>}
+        <h1>Hello there</h1>
       </div>
     );
   }

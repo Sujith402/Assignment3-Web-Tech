@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const count = 0;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App count = {count}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
