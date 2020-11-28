@@ -1,12 +1,14 @@
 import { Component } from 'react';
-import './App.css';
 import './Styles/demo_style.css';
+import Header from './components/Header';
+
+const count = 3;
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello there</h1>
+        <Header count = {count}/>
       </div>
     );
   }
