@@ -1,0 +1,63 @@
+
+/* General font reset*/
+@font-face {
+    font-family: FontAwesome;
+    src: '../../../fontawesome-webfont.woff2';
+}
+
+body {
+    font-family: FontAwesome;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    line-height: 1.6em;
+    margin:0;
+    padding:0;
+}
+
+ul,li {list-style-type: none;margin: 0;padding: 0;}
+a{text-decoration: none;color: white;}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover-trigger  {
+    box-sizing: border-box;
+}
+
+.hover-trigger > a {
+    padding: 10px;
+    position: relative;
+    display: block;
+    border: 2px solid white;
+}
+
+.drop-down {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+.drop-content {
+    display: block;
+    padding: 10px 0px;
+    border: 2px solid red;
+    border-top: none;
+}
+
+.drop-down.active{
+    visibility: visible;
+    opacity: 1;
+    background: blue;
+    transition: visibility 0.4s, opacity 0.4s;
+}
+
+.drop-down.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s;
+}
