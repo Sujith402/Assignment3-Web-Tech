@@ -5,10 +5,14 @@
     src: '../../../fontawesome-webfont.woff2';
 }
 
+
 body {
     font-family: FontAwesome;
     color: white;
-    background-color: #333;
+    background-image: url(../imgs/training-a-timid-rescue-dog-old.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
     text-align: center;
     line-height: 1.6em;
     margin:0;
@@ -78,7 +82,7 @@ li.hover-trigger:hover .drop-down {
 li.hover-trigger:hover{
     background-color: #0018A8;
     border-radius: 50px;
-    transition: background-color 0.5s, border-radius 0.5s;
+    transition: all 0.5s;
 }
 
 .drop-down a{
@@ -99,4 +103,38 @@ li.hover-trigger:hover{
 .angle-down {
     margin:auto;
     vertical-align: middle;
+}
+
+/* Body styles */
+
+.background-break {
+    height: 350px;
+}
+#body {
+    background-color: #4B61D1;
+    color: #fff;
+    padding:10px 0px;
+}
+
+#body .container {
+    width: 80%;
+    margin:auto;
+}
+
+#body .container p{
+    text-align: justify;
+}
+
+#body .container li{
+    padding-left: 20px;
+}
+
+.list-before {
+    font-size: 80%;
+}
+
+/* make dummy container for boxes for now */
+
+.Card-containers {
+    height: 100px;
 }

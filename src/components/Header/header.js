@@ -30,12 +30,4 @@ class Header extends React.Component{
   }
 }
 
-function NavBar(props) {
-  return (
-    <div class='container'>
-
-    </div>
-  )
-}
-
 export default Header;
