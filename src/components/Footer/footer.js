@@ -23,11 +23,13 @@ export default class Footer extends Component {
                     <li><FaInstagram /></li>
                   </ul>
                   <h3><a href='#'>Privacy Policy</a></h3>
+                  <hr />
                   <h3><a href='#'>Terms and Conditions</a></h3>
+                  <hr />
                   <h3><a href='#'>FAQs</a></h3>
                 </li>
                 <li>
-                  Contact Us:
+                  <h2>Contact Us:</h2>
                   <p> Add in submit e-mail card here</p>
                 </li>
             </div>
