@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {FaArrowRight} from 'react-icons/fa'
 import Card from './card'
+import bg_img from '../../imgs/training-a-timid-rescue-dog-old.jpeg';
 
 export default class Body extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Body extends Component {
     }
     return (
       <div id='body'>
+        <img src={bg_img} className='background-image'></img>
         <div className='container'>      
           <h2> <b>Why Adopt?</b></h2>
           <p>

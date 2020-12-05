@@ -23,21 +23,20 @@ const nav_items = [
   },
   {
     title: 'About Us',
-    url: '#',
+    url: '/about',
     dropDown : []
   },
   {
     title: 'Contact Us',
     url: '#',
-    dropDown : []
-  },
-  {
-    title: 'Donate',
-    url: '#',
     dropDown : [
       {
-        title: "gkjdsgjasdk",
-        url: '#'
+        title:'Email : kuttadopt@ktindia.org',
+        url: ''
+      },
+      {
+        title: 'Phone:+91 9999999999',
+        url: ''
       }
     ]
   },
@@ -54,13 +53,18 @@ const nav_items = [
         url: '#'
       }
     ]
+  },
+  {
+    title: 'Donate',
+    url: '#',
+    dropDown : []
   }
 ]
 
 const other_items = [
   {
     title: 'home',
-    url: '#',
+    url: '/',
     dropDown : []
   }
 ]
