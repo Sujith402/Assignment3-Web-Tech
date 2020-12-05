@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 import {FaArrowRight} from 'react-icons/fa'
+import Card from './card'
 
 export default class Body extends Component {
   render() {
+    const element = {
+      category: 'Labrador',
+      age: 3,
+      description: 'Random lines from god knows what. Make sense of it is what I mean',
+      url:'#'
+    }
     return (
       <div id='body'>
         <div className='container'>      
@@ -16,9 +23,10 @@ export default class Body extends Component {
             </ul>
             Therefore, our sincere request is, do not purchase dogs from illegal or uncertified breeders since your purchase encourages them to house dogs for breeding, in the worst and most inhumane conditions imaginable.  If you do not connect with any dog from our shelter, you could approach other shelters in the city, or look for adoption pages on Facebook, or wait. But, once again, no matter what happens, please ADOPT – DON’T SHOP!
           </p>
-          <div className='Card-containers'>
-
-          </div>
+          <ul className='card-list'>
+            <li><Card element={element} /></li>
+            <li><Card element={element} /></li>
+          </ul>
         </div>
       </div>
     )
