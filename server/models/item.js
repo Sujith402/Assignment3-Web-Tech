@@ -16,7 +16,9 @@ const dogs = new Schema({
 },{collection:'dogTypes'});
 
 const reply = new Schema({
-  title: {type: String},
+  FirstName: {type: String},
+  LastName: {type: String},
+  'E-mail': {type: String},
   body: {type: String}
 },{collection:'UserReplies'});
 

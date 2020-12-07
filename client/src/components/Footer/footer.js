@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Logo from '../../imgs/dummy-logo.png'
 import {FaFacebook, FaInstagram} from 'react-icons/fa'
+import AppForm from './AppForm' 
 
 export default class Footer extends Component {
   render() {
@@ -30,7 +31,7 @@ export default class Footer extends Component {
                 </li>
                 <li>
                   <h2>Contact Us:</h2>
-                  <p> Add in submit e-mail card here</p>
+                  <AppForm />
                 </li>
             </div>
           </ul>

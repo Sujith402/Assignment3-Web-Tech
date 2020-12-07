@@ -63,7 +63,7 @@ const nav_items = [
 
 const other_items = [
   {
-    title: 'home',
+    title: 'Kuttadopt',
     url: '/',
     dropDown : []
   }

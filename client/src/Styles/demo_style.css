@@ -56,7 +56,7 @@ a{text-decoration: none;color: white;}
 }
 
 .nav-elements > li:first-child a{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: 'serif','sans-serif';
     font-size: 50px;
     text-align: left;
@@ -179,13 +179,16 @@ li.hover-trigger:hover{
 }
 
 .card .redirect{
-    text-align: center;
-    padding-top:60px;
+    display: block;
+    position: relative;
+    height: 60px;
 }
 
 .card a{
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
+    position: absolute;
+    margin-left: 100px;
     color:#fff;
     background-color: #000;
     cursor: pointer;
@@ -229,7 +232,7 @@ li.hover-trigger:hover{
 #footer .container > li{
     padding: 10px;
     margin: 20px 0px;
-    width: 25%;
+    width: 30%;
 }
 
 #footer .container li h3,#footer .container li a{
@@ -264,4 +267,45 @@ li.hover-trigger:hover{
 
 #footer .img-container {
     text-align: center;
+}
+
+#footer .name-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .name-input li{
+    width: 45%;
+}
+
+#footer .form-input input, #footer .form-input textarea{
+    width: 100%;
+}
+
+#footer button{
+    text-align: center;
+    margin:auto;
+    display: block;
+    background-color: #0047AB;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 107%;
+    transition: background-color 0.5s;
+}
+
+#footer button:hover{
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+.form-input input[type='text'],.form-input input[type='email'],.form-input textarea{
+    padding: 8px;
+}
+
+.form-row{
+    padding-bottom: 13px;
 }

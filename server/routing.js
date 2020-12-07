@@ -18,9 +18,6 @@ app.use(cors());
 
 app.use('/api/items',routes);
 
-app.get('/',(req,res) => {
-  res.json('<h1>Working?</h1>')
-})
 
 app.listen(PORT);
 console.log(`Listening at port ${PORT}`)

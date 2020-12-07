@@ -12,13 +12,21 @@ router.get('/category=:category',(req,res) => {
 
 //Post method
 router.post('/',(req,res) => {
- const obj = new dog({
-    category: req.body.category,
-    age: req.body.age
+ const obj = new Dog.UserReply({
+    title: req.body.title,
+    body: req.body.body
   })
   obj.save().then(item => res.json(item));
 });
 
+
+router.post('/save', (req, res) => {
+  const data = req.body;
+
+  const newuserreply = new Dog.UserReply(data);
+
+  newuserreply.save().then(item => res.json(item))
+});
 //Update method 
 
 
