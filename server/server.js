@@ -4,10 +4,49 @@ async function main(){
   const uri = 'mongodb+srv://user1:1234@cluster0.qvaie.mongodb.net/Dogs?retryWrites=true&w=majority';
   const client = new MongoClient(uri,{useNewUrlParser:true, useUnifiedTopology: true});
 
+  const List = [
+    {
+      category: 'GoldenRetriever',
+      color: 'fawn',
+      age: 2.5,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+    {
+      category: 'GoldenRetriever',
+      color: 'fawn',
+      age: 2,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+    {
+      category: 'GoldenRetriever',
+      color: 'fawn',
+      age: 2.5,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+    {
+      category: 'GoldenRetriever',
+      color: 'white',
+      age: 6.5,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+    {
+      category: 'GoldenRetriever',
+      color: 'white',
+      age: 4.5,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+    {
+      category: 'GoldenRetriever',
+      color: 'black',
+      age: 4,
+      description: 'Random text about the dog. Random text about the dog. Random text about the dog'
+    },
+  ]
+  
   try{
     await client.connect();
     console.log('Connected');
-    await findDocs(client,'fawn');
+    await createListing(client,List);
   }
   catch (e){
     console.error(e);

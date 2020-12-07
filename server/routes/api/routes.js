@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const dog = require('../../models/item');
+const Dog = require('../../models/item');
 
 //Get method 
-router.get('/',(req,res) => {
-  dog.find().sort({age : 1}).limit(3).then(items => {
+router.get('/category=:category',(req,res) => {
+  Dog.dog.find({category:req.params.category}).sort({age : 1}).then(items => {
     res.json(items)
   });
 });

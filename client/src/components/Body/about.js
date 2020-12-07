@@ -4,7 +4,7 @@ import bg_img from '../../imgs/About_us.jpg'
 export default function About() {
   return (
     <div id='About' style={{backgroundColor:'#4B61D1'}}>
-      <img src={bg_img} className='background-image'></img>
+      <img src={bg_img} className='background-image' alt='dog'></img>
       <div style={{padding:'10px'}}>
         <h3>Welcome to Compassion Unlimited Plus Action!</h3>
         <h4>This is our story…</h4>

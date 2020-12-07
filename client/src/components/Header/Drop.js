@@ -1,5 +1,6 @@
 import React from 'react'
 import { v4 } from 'uuid'
+import {Link} from 'react-router-dom'
 
 export default function Drop(props) {
   return (
@@ -7,7 +8,7 @@ export default function Drop(props) {
       {props.element.map((elem) => {
         return (
           <li key={v4()}>
-            <a className='drop-content' href={elem.url}> {elem.title} </a>
+            <Link className='drop-content' to={elem.url} onClick={props.handleClick}> {elem.title} </Link>
           </li>
         )
       })}

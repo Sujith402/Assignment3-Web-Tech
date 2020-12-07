@@ -8,7 +8,7 @@ class Header extends React.Component{
   render(){
     return (
       <>
-        <header id='header'>
+        <header id='header' className={this.props.class}>
           <div className='container'>
             <nav>
               <ul className='nav-elements'>
@@ -17,7 +17,7 @@ class Header extends React.Component{
                   return (
                     <li className='hover-trigger' key={v4()}>
                       <a href={element.url}> {element.title} {element.dropDown.length ? <FaAngleDown className ='angle-down' /> : ''}</a>
-                      {element.dropDown.length ? <Drop element={element.dropDown} /> : ''}
+                      {element.dropDown.length ? <Drop element={element.dropDown} handleClick={this.props.handleClick}/> : ''}
                     </li>
                   )
                 })}

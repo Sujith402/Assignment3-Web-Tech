@@ -15,4 +15,12 @@ const dogs = new Schema({
   }
 },{collection:'dogTypes'});
 
-module.exports = mongoose.model('dogTypes',dogs);
+const reply = new Schema({
+  title: {type: String},
+  body: {type: String}
+},{collection:'UserReplies'});
+
+module.exports = {
+  dog: mongoose.model('dogTypes',dogs),
+  UserReply: mongoose.model('UserReplies',reply)
+}

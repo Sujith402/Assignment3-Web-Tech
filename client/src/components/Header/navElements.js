@@ -5,19 +5,19 @@ const nav_items = [
     dropDown : [
       {
         title: 'Labradors',
-        url: '#'
+        url: '/category=Labrador'
       },
       {
         title: 'Retriever',
-        url: '#'
+        url: '/category=GoldenRetriever'
       },
       {
         title: 'Pomerians',
-        url: '#'
+        url: '/category=Pomerian'
       },
       {
         title: 'Others',
-        url: '#'
+        url: '/category=Others'
       },
     ]
   },
@@ -32,11 +32,11 @@ const nav_items = [
     dropDown : [
       {
         title:'Email : kuttadopt@ktindia.org',
-        url: ''
+        url: '#'
       },
       {
         title: 'Phone:+91 9999999999',
-        url: ''
+        url: '#'
       }
     ]
   },
