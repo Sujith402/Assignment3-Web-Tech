@@ -20,7 +20,7 @@ export default class Category extends Component {
   }
   
   componentDidUpdate(prevProps){
-    if (prevProps.url != this.props.url){
+    if (prevProps.url !== this.props.url){
       console.log('Mounted')
       const link = axios.create({
         baseURL:'http://localhost:5000/api/items'

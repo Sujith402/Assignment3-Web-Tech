@@ -15,7 +15,7 @@ export default class Footer extends Component {
                     <img src={Logo} alt='logo'></img>
                   </div>
                   <p>
-                    <b>E-mail</b>: <a href='#'>kuttadopt@kuttadoptindia.org</a>
+                    <b>E-mail</b>: <a href='/'>kuttadopt@kuttadoptindia.org</a>
                   </p>
                   <h2> Follow us: </h2>
                   <hr />
@@ -23,11 +23,11 @@ export default class Footer extends Component {
                     <li><FaFacebook /></li>
                     <li><FaInstagram /></li>
                   </ul>
-                  <h3><a href='#'>Privacy Policy</a></h3>
+                  <h3><a href='/'>Privacy Policy</a></h3>
                   <hr />
-                  <h3><a href='#'>Terms and Conditions</a></h3>
+                  <h3><a href='/'>Terms and Conditions</a></h3>
                   <hr />
-                  <h3><a href='#'>FAQs</a></h3>
+                  <h3><a href='/'>FAQs</a></h3>
                 </li>
                 <li>
                   <h2>Contact Us:</h2>

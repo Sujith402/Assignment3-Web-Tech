@@ -14,11 +14,7 @@ const nav_items = [
       {
         title: 'Pomerians',
         url: '/category=Pomerian'
-      },
-      {
-        title: 'Others',
-        url: '/category=Others'
-      },
+      }
     ]
   },
   {

@@ -11,15 +11,6 @@ router.get('/category=:category',(req,res) => {
 });
 
 //Post method
-router.post('/',(req,res) => {
- const obj = new Dog.UserReply({
-    title: req.body.title,
-    body: req.body.body
-  })
-  obj.save().then(item => res.json(item));
-});
-
-
 router.post('/save', (req, res) => {
   const data = req.body;
 

@@ -20,7 +20,7 @@ class App extends Component {
   handleClick = (event) => {
     this.setState(() => {
       const url = new URL(event.target.href)
-      const status = url.pathname === '#' ? 'active' : 'inactive';
+      const status = url.pathname === '/' ? 'active' : 'inactive';
       return ({url : url.pathname,status})
     })
   }

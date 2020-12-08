@@ -8,12 +8,12 @@ export default class Body extends Component {
     const element = {
       category: 'Labrador',
       age: 3,
-      description: 'Random lines from god knows what. Make sense of it is what I mean',
-      url:'#'
+      description: 'Random lines about the dog giving an idea of how the dog is',
+      url:'/'
     }
     return (
       <div id='body'>
-        <img src={bg_img} className='background-image'></img>
+        <img src={bg_img} alt='dog' className='background-image'></img>
         <div className='container'>      
           <h2> <b>Why Adopt?</b></h2>
           <div>
